@@ -1,1 +1,1 @@
-# shpe_csuf_website
+# SHPE @ CSUF Website

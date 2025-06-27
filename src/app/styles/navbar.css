@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    background-color: #002CCA;
+    border-bottom: 3px solid #db6c0b;
+    color: white;
+    gap: 20px;
+    padding: 16px;
+    width: 100%;
+    height: auto;
+}
+nav a {
+    transition: color 0.25s;
+}
+nav a:hover {
+    color: #db6c0b
+}
+
+nav .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    width: 50%;
+}
+nav section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}

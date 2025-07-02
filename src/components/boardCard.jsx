@@ -1,5 +1,5 @@
 
-import '../styles/boardCard.css';
+import '../app/styles/boardCard.css';
 
 export default function BoardCard({ name, position, discord, linkedin }) {
     return (

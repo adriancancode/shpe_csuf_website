@@ -1,4 +1,4 @@
-nav {
+/* nav {
     display: flex;
     justify-content: center;
     height: 60px;
@@ -9,8 +9,8 @@ nav {
     padding: 16px;
     width: 100%;
     height: auto;
-}
-nav a {
+} */
+/* nav a {
     transition: color 0.25s;
 }
 nav a:hover {
@@ -27,4 +27,4 @@ nav section {
     display: flex;
     align-items: center;
     gap: 30px;
-}
+} */

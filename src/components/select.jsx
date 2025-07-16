@@ -1,3 +1,5 @@
+import '../app/styles/select.css';
+
 export default function Select({ options, value, onChange }) {
     return (
         <select value={value} onChange={onChange} className="select-board">

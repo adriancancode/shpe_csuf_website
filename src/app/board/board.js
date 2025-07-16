@@ -95,4 +95,4 @@ const shpetinas_board = [
         linkedin: "https://www.linkedin.com/in/daisycalel/"
     }
 ];
-export default { shpe_board, shpetinas_board };
+export { shpe_board, shpetinas_board };

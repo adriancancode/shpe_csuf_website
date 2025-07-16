@@ -1,5 +1,5 @@
 
-.card-body {
+.card-body.shpe {
     display: flex;
     color: white;
     flex-direction: column;
@@ -11,6 +11,25 @@
     border-radius: 8px;
 }
 
+.card-body.shpetinas {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    padding: 16px;
+    background-image: linear-gradient(315deg, #d700cc, #b475ab);
+    border: 3px solid #db6c0b;
+    border-radius: 8px;
+}
+
 hr {
     height: 1px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }

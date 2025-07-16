@@ -14,24 +14,37 @@ export default function Board() {
   const handleBoardChange = (event) => {
     setSelectedBoard(event.target.value);
   };
+  const boardOptions = [
+    { value: "shpe", label: "SHPE Board" },
+    { value: "shpetinas", label: "SHPETinas Board" }
+  ];
 
 
 
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <h1>Board</h1>
+    <div className='flex flex-col items-center justify-center mt-11'>
+      <main className='flex flex-col gap-10 mt-11'>
+        <header className="mt-11">
+        <h1 className="text-5xl font-bold">Board</h1>
+        </header>
+        
         <div className="select-board">
-          <Select/>
+          <Select
+            options={boardOptions}
+            value={selectedBoard}
+            onChange={handleBoardChange}
+            label="Select Board"
+          />
         </div>
-        <div className="card-section">
-          {shpe_board.map((member, id) => (
+        <div className="m-5 grid grid-cols-3 gap-3 p-2 rounded-2xl">
+          {boardData.map((member, id) => (
             <BoardCard
               key={id}
               name={member.name}
               position={member.position}
               discord={member.discord}
               linkedin={member.linkedin}
+              boardType={selectedBoard}
             />
           ))}
         </div>

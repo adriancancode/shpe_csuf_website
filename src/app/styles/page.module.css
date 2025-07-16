@@ -6,11 +6,12 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  display: flex;
+  flex-direction: column;
   align-items: left;
   justify-items: left;
   min-height: 100svh;
+  padding-top: 40px;
   padding-bottom: 64px;
   gap: 64px;
   font-family: var(--font-geist-sans);
@@ -92,8 +93,6 @@ a.secondary {
   border-color: var(--gray-alpha-200);
   min-width: 158px;
 }
-
-
 
 .footer a {
   display: flex;

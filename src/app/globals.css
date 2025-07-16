@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -36,19 +38,12 @@ a {
 }
 
 
+p {
+  font-size: 20px;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
-
-.footer {
-  background-color: #002CCA;
-  width: 100%;
-  grid-row-start: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
 }

@@ -8,8 +8,9 @@ import shpe_csuf from '../public/shpe-csuf.png';
 export default function Navbar() {
     return (
         
-        <nav className='flex justify-center border-b-orange-400 border-b-4 p-11 w-full gap-36 h-24 '>
+        <nav className='flex justify-center border-b-orange-400 border-b-4 p-11 w-full gap-36 h-24 shadow-xl'>
             <div className='flex items-center gap-x-24 w-1/2'>
+            <Link href="/">
                 <Image 
                     src={shpe_csuf} 
                     alt="SHPE CSUF Logo" 
@@ -17,6 +18,8 @@ export default function Navbar() {
                     height={60} 
                     className='h-16 w-auto'
                 />
+            </Link>
+                
             </div>
             <section className='flex items-center gap-20'>
                 <Link href="/"

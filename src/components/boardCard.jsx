@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React } from 'react';
 import '../app/styles/boardCard.css';
 
 export default function BoardCard({ name, position, discord, linkedin, boardType }) {
@@ -16,14 +16,20 @@ export default function BoardCard({ name, position, discord, linkedin, boardType
     };
 
     return (
-        <div className={`card-body ${boardType}`}>
+        <div className={`
+            flex flex-col text-center gap-2  border-2 border-orange-500 rounded-lg text-white
+            ${boardType === 'shpe' 
+                ? 'bg-gradient-to-br from-blue-800 to-blue-400' 
+                : 'bg-gradient-to-br from-pink-600 to-pink-300'
+            }
+        `}>
             <div className='card-header'>
-                <h3 className='name'>{name}</h3>
+                <h3 className='text-2xl'>{name}</h3>
                 <p className='position'>{position}</p>
             </div>
-            <hr/>
+            <hr className='h-px'/>
             <div className='card-footer'>
-                <div className='links'>
+                <div className='flex items-center justify-center gap-24'>
                     <a 
                         href="#" 
                         onClick={(e) => {

@@ -22,13 +22,12 @@ export default function Board() {
 
 
   return (
-    <div className='flex flex-col items-center justify-center mt-11'>
-      <main className='flex flex-col gap-10 mt-11'>
-        <header className="mt-11">
+    <div className='flex flex-col items-center justify-center mt-8'>
+      <header className="">
         <h1 className="text-5xl font-bold">Board</h1>
-        </header>
-        
-        <div className="select-board">
+      </header>
+      <main className='flex flex-col gap-10 mt-11'>
+        <div className="flex items-center">
           <Select
             options={boardOptions}
             value={selectedBoard}
@@ -36,6 +35,8 @@ export default function Board() {
             label="Select Board"
           />
         </div>
+        
+       
         <div className="m-5 grid grid-cols-3 gap-3 p-2 rounded-2xl">
           {boardData.map((member, id) => (
             <BoardCard

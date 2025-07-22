@@ -2,7 +2,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "../components/navbar";
 import "./globals.css";
 import Image from "next/image";
-import { Instagram } from "lucide-react";
 
 
 const geistSans = Geist({
@@ -26,7 +25,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar />
         <main>{children}</main>
-        <footer>
+        <footer className="w-full h-1/5 bg-blue-700">
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"

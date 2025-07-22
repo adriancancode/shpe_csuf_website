@@ -1,9 +1,9 @@
 import Image from "next/image";
-// import styles from "./styles/page.module.css";
+
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
+    <div className="flex flex-col items-center justify-between min-h-svh">
       <main className="flex flex-col gap-10 pl-">
         
         <h1 className="text-5xl font-bold text-center">Welcome to SHPE @ CSUF!</h1>

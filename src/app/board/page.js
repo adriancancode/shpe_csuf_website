@@ -1,7 +1,5 @@
 "use client";
 
-import styles from "../styles/page.module.css";
-import "../styles/board.css";
 import { shpe_board, shpetinas_board } from "./board";
 import BoardCard from "../../components/boardCard";
 import Select from "../../components/select";

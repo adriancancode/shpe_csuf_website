@@ -53,7 +53,8 @@ const shpe_board = [
         name: "Adrian Vazquez",
         position: "Director of Marketing/Webmaster",
         discord: "daveywavy_",
-        linkedin: "https://www.linkedin.com/in/adrian-vazquez-0630b22a2/"
+        linkedin: "https://www.linkedin.com/in/adrian-vazquez-0630b22a2/",
+        headshot: '../../public/board/adrian-vazquez.jpg'
     }
 ];
 

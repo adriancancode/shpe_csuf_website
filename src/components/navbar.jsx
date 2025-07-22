@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import '../app/styles/navbar.css';
 import shpe_csuf from '../public/shpe-csuf.png';
 
 

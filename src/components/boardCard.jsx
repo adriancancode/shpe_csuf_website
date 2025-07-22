@@ -1,7 +1,6 @@
 import { React } from 'react';
-import '../app/styles/boardCard.css';
 
-export default function BoardCard({ name, position, discord, linkedin, boardType }) {
+export default function BoardCard({ name, position, discord, linkedin, headshot, boardType }) {
 
     const handleDiscordCopy = async () => {
         try {
@@ -17,13 +16,17 @@ export default function BoardCard({ name, position, discord, linkedin, boardType
 
     return (
         <div className={`
-            flex flex-col text-center gap-2  border-2 border-orange-500 rounded-lg text-white
+            flex flex-col text-center h-64 w-full min-h-42 gap-2 border-4 border-orange-500 rounded-lg text-white p-14
             ${boardType === 'shpe' 
                 ? 'bg-gradient-to-br from-blue-800 to-blue-400' 
                 : 'bg-gradient-to-br from-pink-600 to-pink-300'
             }
         `}>
-            <div className='card-header'>
+            <div className='flex-grow card-header align-center'>
+                <img 
+                    src={headshot} 
+                    alt={`${name}'s headshot`} 
+                    className='rounded-full w-16 h-16 mx-auto mb-4'/>
                 <h3 className='text-2xl'>{name}</h3>
                 <p className='position'>{position}</p>
             </div>

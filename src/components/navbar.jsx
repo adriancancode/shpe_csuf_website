@@ -14,8 +14,7 @@ export default function Navbar() {
                     src={shpe_csuf} 
                     alt="SHPE CSUF Logo" 
                     width={240} 
-                    height={60} 
-                    className='h-16 w-auto'
+                    height={60}
                 />
             </Link>
                 

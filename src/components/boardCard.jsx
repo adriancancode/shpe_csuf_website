@@ -1,6 +1,7 @@
 import { React } from 'react';
 import { FaDiscord } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import Image from 'next/image';
 
 export default function BoardCard({ name, position, discord, linkedin, headshot, boardType }) {
 
@@ -21,14 +22,15 @@ export default function BoardCard({ name, position, discord, linkedin, headshot,
             flex flex-col text-center h-64 w-full min-h-42 gap-2 border-4 border-orange-500 rounded-lg p-14
             
         `}>
-            <div className='flex-grow card-header align-center'>
+            <div className='flex-grow card-header align-center items-center'>
                 <img 
                     src={headshot} 
                     alt={`${name}'s headshot`} 
                     className={`${boardType === 'shpe' 
                         ? 'shadow-xl shadow-blue-600' 
                         : 'shadow-xl shadow-pink-400'
-                    }not-first-of-type:rounded-full w-16 h-16 mx-auto mb-4`}/>
+                    }rounded-full w-16 h-16 mx-auto mb-4`}
+                    />
                 <h3 className='text-2xl'>{name}</h3>
                 <p className='position'>{position}</p>
             </div>

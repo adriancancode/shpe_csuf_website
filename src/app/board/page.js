@@ -3,15 +3,10 @@
 import { shpe_board, shpetinas_board } from "./board";
 import BoardCard from "../../components/boardCard";
 
-
 export default function Board() {
-  
-
-
-
   return (
-    <main className='flex flex-col items-center justify-center mt-8 mb-8'>
-      <div className='flex flex-col gap-10 mt-11'>
+    <main className='flex flex-col items-center justify-center mt-8 mb-8 pl-16 pr-8'>
+      <div className='flex flex-col gap-10 h-1/5 mt-11 bg-[url(../../../public/images/shpe-board.jpeg)]'>
         <div className="flex flex-col items-start">
           <h1 className="text-5xl font-bold">Board</h1>
           <p>Meet our board members!</p>
@@ -27,7 +22,8 @@ export default function Board() {
               position={member.position}
               discord={member.discord}
               linkedin={member.linkedin}
-              boardType='shpe'
+              headshot={member.headshot}
+              boardType={member.boardType}
             />
           ))}
         </article>
@@ -40,7 +36,7 @@ export default function Board() {
               position={member.position}
               discord={member.discord}
               linkedin={member.linkedin}
-              boardType='shpetinas'
+              boardType={member.boardType}
             />
           ))}
         </article>

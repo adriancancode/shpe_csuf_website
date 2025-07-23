@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import shpe_csuf from '../public/shpe-csuf.png';
+// import shpe_csuf from '/shpe-csuf.png';
 
 
 export default function Navbar() {
@@ -11,7 +11,7 @@ export default function Navbar() {
             <div className='flex items-center gap-x-24 w-1/2'>
             <Link href="/">
                 <Image 
-                    src={shpe_csuf} 
+                    src='/images/shpe-csuf.png' 
                     alt="SHPE CSUF Logo" 
                     width={240} 
                     height={60}
